@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favorite Subject</title>
+    <style>
+        th {
+            display: flex;
+            align-content: flex-start;
+            justify-content: left;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<h1>Your Favorite Subjects</h1>
+<form action="favouriteSubject" method="get">
+    <table>
+        <caption class="visually-hidden">Favorite Subjects Survey</caption>
+        <tr>
+            <th>Your Student ID:</th>
+            <td><label>
+                <input name="id" type="text">
+            </label></td>
+        </tr>
+        <tr>
+            <th>Your Student Name:</th>
+            <td><label>
+                <input name="name" type="text">
+            </label></td>
+        </tr>
+        <tr>
+            <th>Your Favorite Subject:</th>
+            <td>
+                <label>
+                    <input name="subject" type="checkbox" value="Java Programming">
+                </label>
+                Java Programming
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <label>
+                    <input name="subject" type="checkbox" value="Database">
+                </label>
+                Database
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <label>
+                    <input name="subject" type="checkbox" value="WebTech">
+                </label>
+                WebTech
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <label>
+                    <input name="subject" type="checkbox" value="Back-end Dev">
+                </label>
+                Back-end Dev
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <label>
+                    <input name="subject" type="checkbox" value="Computer Network">
+                </label>
+                Computer Network
+            </td>
+        </tr>
+    </table>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
